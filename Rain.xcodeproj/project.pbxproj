@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE4FC9C61A3796760023231C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4FC9C51A3796760023231C /* Cocoa.framework */; };
+		CE9AA99E1A382B23008A8466 /* rain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9AA9961A382B23008A8466 /* rain.cpp */; };
+		CE9AA99F1A382B23008A8466 /* rain.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9AA9971A382B23008A8466 /* rain.h */; };
+		CE9AA9A01A382B23008A8466 /* update_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9AA9981A382B23008A8466 /* update_buffer.c */; };
+		CE9AA9A11A382B23008A8466 /* update_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9AA9991A382B23008A8466 /* update_buffer.h */; };
+		CE9AA9A21A382B23008A8466 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9AA99A1A382B23008A8466 /* common.cpp */; };
+		CE9AA9A31A382B23008A8466 /* heightfield.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9AA99B1A382B23008A8466 /* heightfield.h */; };
+		CE9AA9A41A382B23008A8466 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9AA99C1A382B23008A8466 /* common.h */; };
+		CE9AA9A81A382BAE008A8466 /* fragment_shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE9AA9A61A382BAE008A8466 /* fragment_shader.glsl */; };
+		CE9AA9A91A382BAE008A8466 /* vertex_shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CE9AA9A71A382BAE008A8466 /* vertex_shader.glsl */; };
+		CE9AA9AD1A382BB8008A8466 /* update_heightfield_u.cl in Sources */ = {isa = PBXBuildFile; fileRef = CE9AA9AA1A382BB8008A8466 /* update_heightfield_u.cl */; };
+		CE9AA9AE1A382BB8008A8466 /* update_caustic.cl in Sources */ = {isa = PBXBuildFile; fileRef = CE9AA9AB1A382BB8008A8466 /* update_caustic.cl */; };
+		CE9AA9AF1A382BB8008A8466 /* update_heightfield_v.cl in Sources */ = {isa = PBXBuildFile; fileRef = CE9AA9AC1A382BB8008A8466 /* update_heightfield_v.cl */; };
+		CECC54DE1A357FE300CF1687 /* RainView.h in Headers */ = {isa = PBXBuildFile; fileRef = CECC54DD1A357FE300CF1687 /* RainView.h */; };
+		CECC54E01A357FE300CF1687 /* RainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CECC54DF1A357FE300CF1687 /* RainView.mm */; };
+		CECC54E51A36240E00CF1687 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECC54E41A36240E00CF1687 /* ScreenSaver.framework */; };
+		CECC54E61A36241900CF1687 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEA8F7E1A2B79BE00EB0C93 /* OpenCL.framework */; };
+		CECC54E71A36242100CF1687 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0EF4A11A267D2E00EF57B9 /* OpenGL.framework */; };
+		CECC54FC1A36AFCD00CF1687 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECC54FB1A36AFCD00CF1687 /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE0EF4A11A267D2E00EF57B9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CE4FC9C51A3796760023231C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE9AA9961A382B23008A8466 /* rain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rain.cpp; path = GL_source/rain.cpp; sourceTree = SOURCE_ROOT; };
+		CE9AA9971A382B23008A8466 /* rain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rain.h; path = GL_source/rain.h; sourceTree = SOURCE_ROOT; };
+		CE9AA9981A382B23008A8466 /* update_buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = update_buffer.c; path = GL_source/update_buffer.c; sourceTree = SOURCE_ROOT; };
+		CE9AA9991A382B23008A8466 /* update_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = update_buffer.h; path = GL_source/update_buffer.h; sourceTree = SOURCE_ROOT; };
+		CE9AA99A1A382B23008A8466 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = common.cpp; path = GL_source/common.cpp; sourceTree = SOURCE_ROOT; };
+		CE9AA99B1A382B23008A8466 /* heightfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heightfield.h; path = GL_source/heightfield.h; sourceTree = SOURCE_ROOT; };
+		CE9AA99C1A382B23008A8466 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = GL_source/common.h; sourceTree = SOURCE_ROOT; };
+		CE9AA9A61A382BAE008A8466 /* fragment_shader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fragment_shader.glsl; path = GLSL_source/fragment_shader.glsl; sourceTree = "<group>"; };
+		CE9AA9A71A382BAE008A8466 /* vertex_shader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vertex_shader.glsl; path = GLSL_source/vertex_shader.glsl; sourceTree = "<group>"; };
+		CE9AA9AA1A382BB8008A8466 /* update_heightfield_u.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = update_heightfield_u.cl; path = CL_source/update_heightfield_u.cl; sourceTree = "<group>"; };
+		CE9AA9AB1A382BB8008A8466 /* update_caustic.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = update_caustic.cl; path = CL_source/update_caustic.cl; sourceTree = "<group>"; };
+		CE9AA9AC1A382BB8008A8466 /* update_heightfield_v.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = update_heightfield_v.cl; path = CL_source/update_heightfield_v.cl; sourceTree = "<group>"; };
+		CECC54D91A357FE300CF1687 /* Rain.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rain.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECC54DC1A357FE300CF1687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECC54DD1A357FE300CF1687 /* RainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainView.h; sourceTree = "<group>"; };
+		CECC54DF1A357FE300CF1687 /* RainView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RainView.mm; sourceTree = "<group>"; };
+		CECC54E41A36240E00CF1687 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		CECC54F71A3661C000CF1687 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		CECC54FB1A36AFCD00CF1687 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CEEA8F7E1A2B79BE00EB0C93 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECC54D51A357FE300CF1687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4FC9C61A3796760023231C /* Cocoa.framework in Frameworks */,
+				CECC54FC1A36AFCD00CF1687 /* CoreFoundation.framework in Frameworks */,
+				CECC54E71A36242100CF1687 /* OpenGL.framework in Frameworks */,
+				CECC54E61A36241900CF1687 /* OpenCL.framework in Frameworks */,
+				CECC54E51A36240E00CF1687 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEB4064B1A25F4E800A0C390 = {
+			isa = PBXGroup;
+			children = (
+				CE4FC9C51A3796760023231C /* Cocoa.framework */,
+				CECC54FB1A36AFCD00CF1687 /* CoreFoundation.framework */,
+				CECC54F71A3661C000CF1687 /* ApplicationServices.framework */,
+				CECC54E41A36240E00CF1687 /* ScreenSaver.framework */,
+				CEEA8F7E1A2B79BE00EB0C93 /* OpenCL.framework */,
+				CE0EF4A11A267D2E00EF57B9 /* OpenGL.framework */,
+				CEEA8F841A2B7EFE00EB0C93 /* CL_source */,
+				CEB406691A2609CA00A0C390 /* GLSL_source */,
+				CEB406561A25F4E900A0C390 /* GL_source */,
+				CECC54DA1A357FE300CF1687 /* Rain */,
+				CEB406551A25F4E900A0C390 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB406551A25F4E900A0C390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECC54D91A357FE300CF1687 /* Rain.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB406561A25F4E900A0C390 /* GL_source */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AA9961A382B23008A8466 /* rain.cpp */,
+				CE9AA9971A382B23008A8466 /* rain.h */,
+				CE9AA9981A382B23008A8466 /* update_buffer.c */,
+				CE9AA9991A382B23008A8466 /* update_buffer.h */,
+				CE9AA99A1A382B23008A8466 /* common.cpp */,
+				CE9AA99B1A382B23008A8466 /* heightfield.h */,
+				CE9AA99C1A382B23008A8466 /* common.h */,
+			);
+			name = GL_source;
+			path = "glfw-test";
+			sourceTree = "<group>";
+		};
+		CEB406691A2609CA00A0C390 /* GLSL_source */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AA9A61A382BAE008A8466 /* fragment_shader.glsl */,
+				CE9AA9A71A382BAE008A8466 /* vertex_shader.glsl */,
+			);
+			name = GLSL_source;
+			sourceTree = "<group>";
+		};
+		CECC54DA1A357FE300CF1687 /* Rain */ = {
+			isa = PBXGroup;
+			children = (
+				CECC54DD1A357FE300CF1687 /* RainView.h */,
+				CECC54DF1A357FE300CF1687 /* RainView.mm */,
+				CECC54DB1A357FE300CF1687 /* Supporting Files */,
+			);
+			path = Rain;
+			sourceTree = "<group>";
+		};
+		CECC54DB1A357FE300CF1687 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CECC54DC1A357FE300CF1687 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEEA8F841A2B7EFE00EB0C93 /* CL_source */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AA9AA1A382BB8008A8466 /* update_heightfield_u.cl */,
+				CE9AA9AB1A382BB8008A8466 /* update_caustic.cl */,
+				CE9AA9AC1A382BB8008A8466 /* update_heightfield_v.cl */,
+			);
+			name = CL_source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CECC54D61A357FE300CF1687 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9AA9A41A382B23008A8466 /* common.h in Headers */,
+				CE9AA9A11A382B23008A8466 /* update_buffer.h in Headers */,
+				CE9AA9A31A382B23008A8466 /* heightfield.h in Headers */,
+				CECC54DE1A357FE300CF1687 /* RainView.h in Headers */,
+				CE9AA99F1A382B23008A8466 /* rain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CECC54D81A357FE300CF1687 /* Rain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECC54E31A357FE300CF1687 /* Build configuration list for PBXNativeTarget "Rain" */;
+			buildPhases = (
+				CECC54D41A357FE300CF1687 /* Sources */,
+				CECC54D51A357FE300CF1687 /* Frameworks */,
+				CECC54D61A357FE300CF1687 /* Headers */,
+				CECC54D71A357FE300CF1687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rain;
+			productName = Rain;
+			productReference = CECC54D91A357FE300CF1687 /* Rain.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB4064C1A25F4E800A0C390 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = hyspace;
+				TargetAttributes = {
+					CECC54D81A357FE300CF1687 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CEB4064F1A25F4E800A0C390 /* Build configuration list for PBXProject "Rain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB4064B1A25F4E800A0C390;
+			productRefGroup = CEB406551A25F4E900A0C390 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECC54D81A357FE300CF1687 /* Rain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECC54D71A357FE300CF1687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9AA9A81A382BAE008A8466 /* fragment_shader.glsl in Resources */,
+				CE9AA9A91A382BAE008A8466 /* vertex_shader.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECC54D41A357FE300CF1687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9AA9AF1A382BB8008A8466 /* update_heightfield_v.cl in Sources */,
+				CE9AA99E1A382B23008A8466 /* rain.cpp in Sources */,
+				CE9AA9AE1A382BB8008A8466 /* update_caustic.cl in Sources */,
+				CE9AA9A21A382B23008A8466 /* common.cpp in Sources */,
+				CE9AA9A01A382B23008A8466 /* update_buffer.c in Sources */,
+				CECC54E01A357FE300CF1687 /* RainView.mm in Sources */,
+				CE9AA9AD1A382BB8008A8466 /* update_heightfield_u.cl in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CEB406591A25F4E900A0C390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEB4065A1A25F4E900A0C390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CECC54E11A357FE300CF1687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Rain/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				OPENCL_COMPILER_VERSION = CL1.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		CECC54E21A357FE300CF1687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Rain/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				OPENCL_COMPILER_VERSION = CL1.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB4064F1A25F4E800A0C390 /* Build configuration list for PBXProject "Rain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB406591A25F4E900A0C390 /* Debug */,
+				CEB4065A1A25F4E900A0C390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECC54E31A357FE300CF1687 /* Build configuration list for PBXNativeTarget "Rain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECC54E11A357FE300CF1687 /* Debug */,
+				CECC54E21A357FE300CF1687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB4064C1A25F4E800A0C390 /* Project object */;
+}
